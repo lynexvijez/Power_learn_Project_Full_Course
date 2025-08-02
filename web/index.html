@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A basic HTML template demonstrating structure, accessibility, and semantic elements. Includes a form, table, image, and useful HTML features."
+    />
+    <title>Introduction to Basic HTML Elements</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+        background-color: #f4f4f4;
+        color: #333;
+      }
+
+      header,
+      footer {
+        background-color: #222;
+        color: #fff;
+        padding: 1rem 2rem;
+        text-align: center;
+      }
+
+      main {
+        padding: 2rem;
+      }
+
+      h1,
+      h2 {
+        color: #005a9c;
+      }
+
+      p,
+      ol,
+      ul,
+      table {
+        margin-bottom: 1.5rem;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        background-color: #fff;
+      }
+
+      table th,
+      table td {
+        border: 1px solid #ccc;
+        padding: 0.75rem;
+        text-align: left;
+      }
+
+      table th {
+        background-color: #e9ecef;
+      }
+
+      form {
+        background-color: #fff;
+        padding: 1.5rem;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        margin-bottom: 2rem;
+      }
+
+      form input[type="text"],
+      form input[type="password"],
+      form select {
+        width: 100%;
+        padding: 0.5rem;
+        margin: 0.5rem 0 1rem 0;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+      }
+
+      form input[type="submit"] {
+        background-color: #005a9c;
+        color: white;
+        border: none;
+        padding: 0.75rem 1.5rem;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+
+      form input[type="submit"]:hover {
+        background-color: #004480;
+      }
+
+      nav ul {
+        display: flex;
+        list-style-type: none;
+        justify-content: center;
+        padding: 0;
+        background-color: #ddd;
+        margin: 0;
+      }
+
+      nav ul li {
+        margin: 0 1rem;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: #333;
+        padding: 1rem;
+        display: block;
+      }
+
+      nav ul li a:hover {
+        background-color: #bbb;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto 1.5rem auto;
+        border-radius: 8px;
+      }
+
+      fieldset {
+        border: 1px solid #ccc;
+        padding: 1rem;
+        margin-top: 1rem;
+      }
+
+      legend {
+        padding: 0 0.5rem;
+        font-weight: bold;
+        color: #005a9c;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Welcome to My HTML Demonstration Page</h1>
+    </header>
+
+    <main>
+      <section>
+        <h2>About This Page</h2>
+        <p>
+          This webpage is designed as part of a basic HTML exercise. It
+          showcases fundamental HTML5 elements, including semantic structure,
+          accessibility practices, metadata for SEO, and interactivity through
+          forms.
+        </p>
+        <p>
+          The purpose is to demonstrate foundational web development skills
+          using proper standards and conventions. The structure follows a clean
+          and accessible layout, intended to be both readable and functional.
+        </p>
+      </section>
+
+      <section>
+        <h2>Who Am I?</h2>
+        <p>
+          I am a passionate learner who believes that understanding the basics
+          is the key to mastering advanced concepts. Although I have a
+          background in computer science, I chose to revisit HTML from the
+          ground up.
+        </p>
+        <ol>
+          <li>I continuously explore new technologies and tools.</li>
+          <li>I believe in hands-on learning through practice.</li>
+          <li>I value clean and semantic code.</li>
+          <li>I strive to build inclusive, accessible web experiences.</li>
+        </ol>
+      </section>
+
+      <section>
+        <h2>Contact and External Resources</h2>
+        <p>
+          For more information, feel free to visit an external resource:
+          <a href="https://google.com" target="_blank" rel="noopener noreferrer"
+            >Visit Google</a
+          >
+        </p>
+      </section>
+
+      <section>
+        <h2>Profile Image</h2>
+        <img
+          src="image1.jpg"
+          alt="Profile of the developer"
+          width="350"
+          height="250"
+        />
+      </section>
+
+      <section>
+        <h2>Common User Information</h2>
+        <table border="1">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Phone Number</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Felo</td>
+              <td>felo@gmail.com</td>
+              <td>+254712345678</td>
+            </tr>
+            <tr>
+              <td>Jane Smith</td>
+              <td>jane.smith@gmail.com</td>
+              <td>+254798123456</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>Let me know you visited my web page!</h2>
+        <form action="submit.html" method="post">
+          <fieldset>
+            <legend>Register Here</legend>
+
+            <label for="name">Full Name:</label><br />
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter your name"
+              required
+            /><br /><br />
+
+            <label for="appointment">Appointment ID:</label><br />
+            <input
+              type="password"
+              id="appointment"
+              name="appointment"
+              title="Enter a unique ID"
+              required
+            /><br /><br />
+
+            <label>Gender:</label><br />
+            <input type="radio" id="male" name="gender" value="Male" />
+            <label for="male">Male</label><br />
+            <input type="radio" id="female" name="gender" value="Female" />
+            <label for="female">Female</label><br /><br />
+
+            <label for="country">Country:</label><br />
+            <select id="country" name="country">
+              <option value="Kenya">Kenya</option>
+              <option value="Uganda">Uganda</option>
+              <option value="Tanzania">Tanzania</option>
+              <option value="South Africa">South Africa</option>
+              <option value="Rwanda">Rwanda</option></select
+            ><br /><br />
+
+            <label>Hobbies:</label><br />
+            <input
+              type="checkbox"
+              id="dancing"
+              value="Dancing"
+              name="hobbies"
+            />
+            <label for="dancing">Dancing</label><br />
+            <input type="checkbox" id="gaming" value="Gaming" name="hobbies" />
+            <label for="gaming">Gaming</label><br /><br />
+
+            <input type="submit" value="Submit" />
+          </fieldset>
+        </form>
+      </section>
+
+      <nav>
+        <h2>Site Navigation</h2>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Lynex Website. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
